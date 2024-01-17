@@ -16,7 +16,7 @@
 {#if !sidebarHidden}
 <div class="sidebar" transition:fly={{x: "-5rem", duration: 250, easing: expoOut }}>
     <ul>
-        <li><a href="/">Home</a>
+        <li><a href="/">Home</a></li>
         {#each data.weeks as week}
         <li><a href={`week-${week}`}>Week {week}</a></li>
         {/each}
@@ -88,6 +88,7 @@
                     color: #fff
 
     .sidebar-button
+        display: none
         width: 2rem
         height: 2rem
         border-radius: 0.25rem
